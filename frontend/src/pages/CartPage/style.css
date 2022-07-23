@@ -1,0 +1,27 @@
+.sectionWrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  overflow-x: auto;
+}
+
+.sectionWrapper table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #666;
+  color: #fff;
+}
+
+.sectionWrapper table td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #f6f6f6;
+}
+
+@media screen and (max-width: 576px) {
+  .sectionWrapper table {
+    display: block;
+  }
+}

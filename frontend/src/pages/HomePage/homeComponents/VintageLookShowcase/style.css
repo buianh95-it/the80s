@@ -1,0 +1,48 @@
+.VintageLookShowcase .vintageWrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.vintageWrap .vintage-item {
+  position: relative;
+  width: 475px;
+  height: 600px;
+  cursor: pointer;
+  transition: width 0.5s ease-in-out;
+}
+.vintageWrap .vintage-item h2 {
+  color: #fff;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: top 0.5s ease-in-out;
+}
+
+.vintage-item:hover {
+  width: calc(475px + 75px);
+  filter: none !important;
+  align-items: flex-start;
+}
+
+.vintage-item:hover h2 {
+  top: 50px;
+}
+
+.vintageWrap .inactive {
+  filter: grayscale(100%);
+}
+
+@media (max-width: 768px) {
+  .VintageLookShowcase .vintageWrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .vintageWrap .vintage-item {
+    width: 375px;
+    height: 500px;
+  }
+}

@@ -1,0 +1,28 @@
+export const ROUTES = {
+  LOGIN: '/login',
+  REGISTER: '/register',
+  USER: {
+    HOME: '/',
+    PRODUCT_LIST_ALL: '/shop',
+    PRODUCT_LIST_HOODIE: '/hoodie',
+    PRODUCT_LIST_PANTS: '/pants',
+    PRODUCT_DETAIL: '/products/:id',
+    CART: '/cart',
+    MY_PROFILE: '/my-profile',
+    ORDER_HISTORY: '/order-history',
+    WISH_LIST: '/wish-list',
+    BLOG: '/blog',
+    MEMBERSHIP: '/membership',
+    ABOUT: '/about',
+    SEARCH: '/search/:keyword',
+    CHANGE_PASSWORD: '/change-password',
+  },
+  ADMIN: {
+    USER_LIST: '/admin/users',
+    PRODUCT_LIST: '/admin/products',
+    ORDER_LIST: '/admin/orders',
+    PRODUCT_DETAIL: '/admin/products/:id',
+    ADD_PRODUCT: '/admin/add-product',
+  },
+  NOT_FOUND: '/404',
+}
